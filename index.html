@@ -4,13 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/style.css">
     <title>Pokedex</title>
 </head>
 <body>
-    <h1>Pokedex launchx</h1>
+    <h1>Pokedex</h1>
     <input type="text" placeholder="Nombre" id="pokeName"><br>
     <img src="img/pokeball.png" id="pokeImg" alt="Pokemon" width="150px"><br>
-    <p id="pokeAttack"></p>
+    <table>
+        <tr>
+            <th>ID</th>
+            <td id="pokeId">0</td>
+        </tr>
+    </table>
+    <ul id="pokeType"></ul>
+    <table>
+        <tr>
+            <th scope="row"><h2>stats</h2></th>
+        </tr>
+        <tr>
+            <th>HP</th>
+            <td id="pokeHp">0</td>
+        </tr>
+        <tr>
+            <th>Attack</th>
+            <td id="pokeAttack">0</td>
+        </tr>
+        <tr>
+            <th>Defense</th>
+            <td id="pokeDefense">0</td>
+        </tr>
+        <tr>
+            <th>Weight</th>
+            <td id="pokeWeight">0</td>
+        </tr>
+    </table>
     <button id="button" onclick="fetchPokemon()">Cambiar pokemon</button>
 </body>
 <footer>

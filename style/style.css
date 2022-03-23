@@ -47,10 +47,6 @@ main {
     grid-template-columns: repeat(2,1fr);
     margin-bottom: 2%;
 }
-.button{
-
-}
-
 #pokeType{
     display: flex;
     flex-direction: row;

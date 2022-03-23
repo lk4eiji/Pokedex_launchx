@@ -1,6 +1,57 @@
-/*tipos*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto';
+    font-weight: 400;
+    background-image: url(/img/bg.jpg);
+    background-size: 100%;
+}
+main {
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+.header{
+    background-color: #fff;
+    opacity: 0.8;
+    margin-bottom: 5%;
+}
+.img{
+    width: 200px;
+    margin-top: 5%;
+}
+.container{
+    display: grid;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+.pokedex{
+    display: grid;
+    grid-template-rows: auto 1fr repeat(6,auto);
+    background-color: rgba(39, 127, 245, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+.type{
+    width: 100%;
+    margin-bottom: 5% !important;
+    justify-content: center !important;
 
-#pokeType {
+}
+.info{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-bottom: 2%;
+}
+.button{
+
+}
+
+#pokeType{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -21,6 +72,7 @@
     outline-offset: 2px;
     list-style: none;
 }
+/*tipos*/
 .normal {
     outline-color: #A8A77A;
     background-color: #A8A77A;
@@ -97,4 +149,16 @@
 .fairy  {
     outline-color: #D685AD;
     background-color: #D685AD;
+}
+
+@media screen and (max-width: 900px) {
+	
+}
+
+@media screen and (max-width: 700px) {
+	
+}
+
+@media screen and (max-width: 600px) {
+
 }

@@ -8,40 +8,29 @@
     <title>Pokedex</title>
 </head>
 <body>
-    <h1>Pokedex</h1>
-    <input type="text" placeholder="Nombre" id="pokeName"><br>
-    <img src="img/pokeball.png" id="pokeImg" alt="Pokemon" width="150px"><br>
-    <table>
-        <tr>
-            <th>ID</th>
-            <td id="pokeId">0</td>
-        </tr>
-    </table>
-    <ul id="pokeType"></ul>
-    <table>
-        <tr>
-            <th scope="row"><h2>stats</h2></th>
-        </tr>
-        <tr>
-            <th>HP</th>
-            <td id="pokeHp">0</td>
-        </tr>
-        <tr>
-            <th>Attack</th>
-            <td id="pokeAttack">0</td>
-        </tr>
-        <tr>
-            <th>Defense</th>
-            <td id="pokeDefense">0</td>
-        </tr>
-        <tr>
-            <th>Weight</th>
-            <td id="pokeWeight">0</td>
-        </tr>
-    </table>
-    <button id="button" onclick="fetchPokemon()">Cambiar pokemon</button>
+    <main>
+        <div class="header">
+            <h1 style="text-align: center;">POKEDEX</h1>
+        </div>
+        <div class="container">
+            <div class="pokedex">
+                <input type="text" placeholder="Nombre" id="pokeName">
+                <img class="img" src="img/pokeball.png" id="pokeImg" alt="pokemon sprite">
+                <ul class="type" id="pokeType"></ul>
+                <div class="info" style="text-align: center;">
+                    <p>ID #</p><p id="pokeId">0</p>
+                </div>
+                <h1 style="text-align: center;">stats</h1>
+                <div class="info" style="text-align: center;">
+                    <p>HP</p><p id="pokeHp">0</p>
+                    <p>Attack</p><p id="pokeAttack">0</p>
+                    <p>Defense</p><p id="pokeDefense">0</p>
+                    <p>Weight</p><p id="pokeWeight">0</p>
+                </div>
+                <button id="button" onclick="fetchPokemon()">Search Pokemon</button>        
+            </div>
+       </div>
+    </main>
 </body>
-<footer>
-    <script src="/js/main.js"></script>
-</footer>
+<script src="/js/main.js"></script>
 </html>
